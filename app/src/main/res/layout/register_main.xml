@@ -111,18 +111,20 @@
                 </RadioGroup>
             </TableRow>
 
-            <TableRow >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="100dp">
 
-                <TextView />
-
-                <LinearLayout >
                     <Button
                         android:id="@+id/Register"
                         android:layout_width="150dp"
                         android:layout_height="wrap_content"
-                        android:text=" 등록" />
+                        android:text="등록"
+                        android:layout_gravity="center"
+                        android:background="@color/blue_200"/>
                 </LinearLayout>
-            </TableRow>
         </TableLayout>
     </LinearLayout>
 </LinearLayout>

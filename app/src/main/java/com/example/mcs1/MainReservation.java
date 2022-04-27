@@ -19,6 +19,7 @@ public class MainReservation extends Activity {
 
         btnchoice = (Button) findViewById(R.id.BtnChoice);
 
+
         ImageButton BtnHome = (ImageButton) findViewById(R.id.BtnHome);
         BtnHome.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -52,6 +53,8 @@ public class MainReservation extends Activity {
             }
         });
 
+
+        final TextView[] selectednum = new TextView[19];
         final boolean[] selected = {false};
         Button selectedBtn1 = findViewById(R.id.BtnTable1);
         Button selectedBtn2 = findViewById(R.id.BtnTable2);
@@ -121,9 +124,8 @@ public class MainReservation extends Activity {
                     selectedBtn17.setEnabled(false);
                     selectedBtn18.setEnabled(false);
                     selectedBtn19.setEnabled(false);
+                    selectednum[0].setText("1");
                 }
-                String num1 = selectnum.getText().toString();
-
             }
         });
 
@@ -175,6 +177,7 @@ public class MainReservation extends Activity {
                     selectedBtn17.setEnabled(false);
                     selectedBtn18.setEnabled(false);
                     selectedBtn19.setEnabled(false);
+                    selectednum[1].setText("2");
                 }
             }
         });
@@ -227,6 +230,7 @@ public class MainReservation extends Activity {
                     selectedBtn17.setEnabled(false);
                     selectedBtn18.setEnabled(false);
                     selectedBtn19.setEnabled(false);
+                    selectednum[2].setText("3");
                 }
             }
         });
@@ -278,6 +282,7 @@ public class MainReservation extends Activity {
                     selectedBtn17.setEnabled(false);
                     selectedBtn18.setEnabled(false);
                     selectedBtn19.setEnabled(false);
+                    selectednum[3].setText("4");
                 }
             }
         });
@@ -329,6 +334,7 @@ public class MainReservation extends Activity {
                     selectedBtn17.setEnabled(false);
                     selectedBtn18.setEnabled(false);
                     selectedBtn19.setEnabled(false);
+                    selectednum[4].setText("5");
                 }
             }
         });
@@ -380,6 +386,7 @@ public class MainReservation extends Activity {
                     selectedBtn17.setEnabled(false);
                     selectedBtn18.setEnabled(false);
                     selectedBtn19.setEnabled(false);
+                    selectednum[5].setText("6");
                 }
             }
         });
@@ -431,6 +438,7 @@ public class MainReservation extends Activity {
                     selectedBtn17.setEnabled(false);
                     selectedBtn18.setEnabled(false);
                     selectedBtn19.setEnabled(false);
+                    selectednum[6].setText("7");
                 }
             }
         });
@@ -482,6 +490,7 @@ public class MainReservation extends Activity {
                     selectedBtn17.setEnabled(false);
                     selectedBtn18.setEnabled(false);
                     selectedBtn19.setEnabled(false);
+                    selectednum[7].setText("8");
                 }
             }
         });
@@ -533,6 +542,7 @@ public class MainReservation extends Activity {
                     selectedBtn17.setEnabled(false);
                     selectedBtn18.setEnabled(false);
                     selectedBtn19.setEnabled(false);
+                    selectednum[8].setText("9");
                 }
             }
         });
@@ -584,6 +594,7 @@ public class MainReservation extends Activity {
                     selectedBtn17.setEnabled(false);
                     selectedBtn18.setEnabled(false);
                     selectedBtn19.setEnabled(false);
+                    selectednum[9].setText("10");
                 }
             }
         });
@@ -636,6 +647,7 @@ public class MainReservation extends Activity {
                     selectedBtn17.setEnabled(false);
                     selectedBtn18.setEnabled(false);
                     selectedBtn19.setEnabled(false);
+                    selectednum[10].setText("11");
                 }
             }
         });
@@ -687,6 +699,7 @@ public class MainReservation extends Activity {
                     selectedBtn17.setEnabled(false);
                     selectedBtn18.setEnabled(false);
                     selectedBtn19.setEnabled(false);
+                    selectednum[11].setText("12");
                 }
             }
         });
@@ -738,6 +751,7 @@ public class MainReservation extends Activity {
                     selectedBtn17.setEnabled(false);
                     selectedBtn18.setEnabled(false);
                     selectedBtn19.setEnabled(false);
+                    selectednum[12].setText("13");
                 }
             }
         });
@@ -789,6 +803,7 @@ public class MainReservation extends Activity {
                     selectedBtn17.setEnabled(false);
                     selectedBtn18.setEnabled(false);
                     selectedBtn19.setEnabled(false);
+                    selectednum[13].setText("14");
                 }
             }
         });
@@ -840,6 +855,7 @@ public class MainReservation extends Activity {
                     selectedBtn17.setEnabled(false);
                     selectedBtn18.setEnabled(false);
                     selectedBtn19.setEnabled(false);
+                    selectednum[14].setText("15");
                 }
             }
         });
@@ -891,6 +907,7 @@ public class MainReservation extends Activity {
                     selectedBtn17.setEnabled(false);
                     selectedBtn18.setEnabled(false);
                     selectedBtn19.setEnabled(false);
+                    selectednum[15].setText("16");
                 }
             }
         });
@@ -943,6 +960,7 @@ public class MainReservation extends Activity {
                     selectedBtn1.setEnabled(false);
                     selectedBtn18.setEnabled(false);
                     selectedBtn19.setEnabled(false);
+                    selectednum[16].setText("17");
                 }
             }
         });
@@ -994,6 +1012,7 @@ public class MainReservation extends Activity {
                     selectedBtn17.setEnabled(false);
                     selectedBtn1.setEnabled(false);
                     selectedBtn19.setEnabled(false);
+                    selectednum[17].setText("18");
                 }
             }
         });
@@ -1045,6 +1064,7 @@ public class MainReservation extends Activity {
                     selectedBtn17.setEnabled(false);
                     selectedBtn18.setEnabled(false);
                     selectedBtn1.setEnabled(false);
+                    selectednum[18].setText("19");
                 }
             }
         });
@@ -1057,9 +1077,21 @@ public class MainReservation extends Activity {
                     startActivity(intent);
                 }
                 else{
-                    Toast.makeText(getApplicationContext(),"좌석을 선택하세요",Toast.LENGTH_SHORT);
+                    Toast.makeText(getApplicationContext(),"좌석을 선택하세요",Toast.LENGTH_SHORT).show();
                 }
+
             }
         });
     }
 }
+    /*public void onClick(View v){
+        Intent intent;
+        if(enjoy.isChecked()==true) {
+            intent = new Intent(getApplicationContext(), PopupActivity.class);
+            Toast.makeText(EmotionActivity.this, "기쁨 버튼이 눌렸습니다.", Toast.LENGTH_SHORT).show();
+        }
+        else if(tired.isChecked()==true) {
+            intent = new Intent(getApplicationContext(), PopupActivity.class);
+            Toast.makeText(EmotionActivity.this, "피곤 버튼이 눌렸습니다.", Toast.LENGTH_SHORT).show();
+        }
+        */

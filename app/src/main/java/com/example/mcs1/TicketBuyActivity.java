@@ -152,7 +152,7 @@ public class TicketBuyActivity extends Activity {
                     startActivity(intent);
                 }
                 else{
-                    Toast.makeText(getApplicationContext(),"결제시간을 선택하세요",Toast.LENGTH_SHORT);
+                    Toast.makeText(getApplicationContext(),"결제시간을 선택하세요",Toast.LENGTH_SHORT).show();
                 }
             }
         });
