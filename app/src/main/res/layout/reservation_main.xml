@@ -18,7 +18,8 @@
             android:layout_marginTop="25dp"
             android:scaleType="fitCenter"
             android:src="@drawable/menu"
-            android:background="#FFFFFF" />
+            android:background="#FFFFFF"
+            />
 
         <TextView
             android:layout_width="wrap_content"
@@ -31,6 +32,7 @@
 
     </LinearLayout>
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="80dp"
@@ -42,169 +44,223 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginLeft="30dp"
-            android:text="좌석현황"
+            android:text="좌석현황 "
             android:textColor="#000000"
             android:textSize="25dp"/>
 
     </LinearLayout>
 
-    <RadioGroup
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="400dp"
         android:layout_gravity="center"
-        android:orientation="vertical">
+        android:orientation="horizontal">
 
-        <LinearLayout
+        <TableLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:gravity="center"
-            android:orientation="horizontal">
+            android:stretchColumns="*">
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="1" />
+            <TableRow>
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="2" />
+                <Button
+                    android:id="@+id/BtnTable5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_span="1"
+                    android:background="@drawable/selector_selected"
+                    android:text="5" />
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="3" />
+                <Button
+                    android:id="@+id/BtnTable6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_selected"
+                    android:text="6" />
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="4" />
+                <Button
+                    android:id="@+id/BtnTable7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:background="@drawable/selector_selected"
+                    android:text="7" />
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="5" />
-        </LinearLayout>
+                <Button
+                    android:id="@+id/BtnTable8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_selected"
+                    android:text="8" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
+                <Button
+                    android:id="@+id/BtnTable9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_selected"
+                    android:text="9" />
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="6" />
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="300dp"
-                android:text="16" />
-        </LinearLayout>
+            </TableRow>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
+            <TableRow>
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="7" />
+                <Button
+                    android:id="@+id/BtnTable4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_span="1"
+                    android:background="@drawable/selector_selected"
+                    android:text="4" />
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="70dp"
-                android:text="10" />
+                <Button
+                    android:id="@+id/BtnTable10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="6"
+                    android:background="@drawable/selector_selected"
+                    android:text="10" />
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="11" />
+            </TableRow>
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="12" />
+            <TableRow>
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="65dp"
-                android:text="17" />
-        </LinearLayout>
+                <Button
+                    android:id="@+id/BtnTable3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_span="1"
+                    android:background="@drawable/selector_selected"
+                    android:text="3" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
+                <Button
+                    android:id="@+id/BtnTable14"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:background="@drawable/selector_selected"
+                    android:text="14" />
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="8" />
+                <Button
+                    android:id="@+id/BtnTable15"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:background="@drawable/selector_selected"
+                    android:text="15" />
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="70dp"
-                android:text="13" />
+                <Button
+                    android:id="@+id/BtnTable16"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="4"
+                    android:background="@drawable/selector_selected"
+                    android:text="16" />
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="14" />
+                <Button
+                    android:id="@+id/BtnTable11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="6"
+                    android:background="@drawable/selector_selected"
+                    android:text="11" />
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="15" />
+            </TableRow>
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="65dp"
-                android:text="18" />
-        </LinearLayout>
+            <TableRow>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
+                <Button
+                    android:id="@+id/BtnTable2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_span="1"
+                    android:background="@drawable/selector_selected"
+                    android:text="2" />
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="9" />
+                <Button
+                    android:id="@+id/BtnTable17"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:background="@drawable/selector_selected"
+                    android:text="17" />
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="300dp"
-                android:text="19" />
-        </LinearLayout>
-    </RadioGroup>
+                <Button
+                    android:id="@+id/BtnTable18"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:background="@drawable/selector_selected"
+                    android:text="18" />
 
+                <Button
+                    android:id="@+id/BtnTable19"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="4"
+                    android:background="@drawable/selector_selected"
+                    android:text="19" />
+
+                <Button
+                    android:id="@+id/BtnTable12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="6"
+                    android:background="@drawable/selector_selected"
+                    android:text="12" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/BtnTable1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_span="1"
+                    android:background="@drawable/selector_selected"
+                    android:text="1" />
+
+                <Button
+                    android:id="@+id/BtnTable13"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="6"
+                    android:background="@drawable/selector_selected"
+                    android:text="13" />
+
+            </TableRow>
+
+
+        </TableLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="165dp"
+        android:layout_gravity="center"
+        android:text="선택된 좌석: " />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/selectnum"
+        android:layout_gravity="center"
+        android:text=""/>
+    </LinearLayout>
 
     <Button
         android:id="@+id/BtnChoice"
-        android:layout_width="match_parent"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_margin="10dp"
         android:background="#87CEEB"
         android:rotationX="0"
@@ -214,8 +270,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="140dp">
+        android:orientation="horizontal">
 
         <ImageButton
             android:id="@+id/BtnUser"

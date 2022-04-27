@@ -8,7 +8,8 @@
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Mcs1">
+        android:theme="@style/Theme.Mcs1"
+        android:hardwareAccelerated="true">
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -24,6 +25,8 @@
         <activity android:name=".MainEct" />
         <activity android:name=".MainReservation" />
         <activity android:name=".MainMypage" />
+        <activity android:name=".TicketBuyActivity" />
+        <activity android:name=".CreateQR" />
     </application>
 
 </manifest>
