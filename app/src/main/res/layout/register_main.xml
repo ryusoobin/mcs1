@@ -42,13 +42,41 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text=" 사용자 이름&#58;" />
+                    android:text=" 사용자 이름  " />
 
                 <EditText
-                    android:id="@+id/usernameRegister"
+                    android:id="@+id/username"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:hint=" 사용자 이름을 입력하십시오&#33;&#33;&#33;" />
+                    android:hint="사용자 이름을 입력하십시오." />
+            </TableRow>
+            <TableRow >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="아이디" />
+
+                <EditText
+                    android:id="@+id/userid"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="아이디를 입력하십시오." />
+            </TableRow>
+            <TableRow >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="암호" />
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="암호를 입력하십시오." />
             </TableRow>
 
             <TableRow >
@@ -57,13 +85,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text=" 암호&#58;" />
+                    android:text="이메일" />
 
                 <EditText
-                    android:id="@+id/passwordRegister"
+                    android:id="@+id/email"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:hint=" 암호를 입력하십시오&#33;&#33;&#33;" />
+                    android:hint="이메일을 입력하십시오." />
             </TableRow>
 
             <TableRow >
@@ -72,13 +100,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text=" 연령&#58;" />
+                    android:text="나이" />
 
                 <EditText
-                    android:id="@+id/ageRegister"
+                    android:id="@+id/age"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:hint=" 연령을 입력하십시오&#33;&#33;&#33;" />
+                    android:hint="나이를 입력하십시오." />
             </TableRow>
 
             <TableRow >
@@ -87,25 +115,24 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text=" 성별&#58;"
-                    android:textSize="20dp" />
+                    android:text="성별" />
 
                 <RadioGroup
-                    android:id="@+id/sexRegister"
+                    android:id="@+id/gender"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:checkedButton="@+id/woman"
                     android:orientation="horizontal" >
 
                     <RadioButton
-                        android:id="@+id/nan"
-                        android:text=" 남성"
+                        android:id="@+id/man"
+                        android:text="남성"
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content" />
 
                     <RadioButton
                         android:id="@id/woman"
-                        android:text=" 여성"
+                        android:text="여성"
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"/>
                 </RadioGroup>

@@ -72,7 +72,7 @@
     <Button
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="홈으로"
+        android:text="확인"
         android:layout_gravity="center"
         android:id="@+id/BtnCheck"
         android:background="@color/blue_200"

@@ -13,44 +13,70 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainRegister extends AppCompatActivity {
-    EditText username;
-    EditText password;
-    EditText age;
-    RadioGroup sex;
     Button register;
-    //ImageButton BtnReturn;
+    ImageButton BtnReturn;
+
+    //RadioGroup gender;
+    //RadioButton man, woman;
+    EditText username, userid, password, email, age;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.register_main);
-        findViews();
-        register.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                String name = username.getText().toString().trim();
-                String pass = password.getText().toString().trim();
-                String agestr = age.getText().toString().trim();
-                String sexstr = ((RadioButton) MainRegister.this.findViewById(sex.getCheckedRadioButtonId())).getText().toString();
-                Log.i("TAG", name + "_" + pass + "_" + agestr + "_" + sexstr);
-                UserService uService = new UserService(MainRegister.this);
-                User user = new User();
-                user.setUsername(name);
-                user.setPassword(pass);
-                user.setAge(Integer.parseInt(agestr));
-                user.setSex(sexstr);
-                uService.register(user);
-                Toast.makeText(MainRegister.this, " 회원가입 성공 ", Toast.LENGTH_LONG).show();
 
+        BtnReturn = (ImageButton)findViewById(R.id.BtnReturn);
+        register = (Button) findViewById(R.id.Register);
+        username = (EditText) findViewById(R.id.username);
+        userid = (EditText) findViewById(R.id.userid);
+        password = (EditText) findViewById(R.id.password);
+        email = (EditText) findViewById(R.id.email);
+        age = (EditText) findViewById(R.id.age);
+        //gender = (RadioGroup) findViewById(R.id.gender);
+        //man = (RadioButton) findViewById(R.id.man);
+        //woman = (RadioButton) findViewById(R.id.woman);
+
+        String edtName = username.getText().toString();
+        String edtId = userid.getText().toString();
+        String edtPw = password.getText().toString();
+        String edtEmail = email.getText().toString();
+        String edtAge = age.getText().toString();
+
+        BtnReturn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 Intent intent = new Intent(MainRegister.this,MainLogin.class);
                 startActivity(intent);
             }
         });
-    }
 
-    private void findViews() {
-        username=(EditText) findViewById(R.id.usernameRegister);
-        password=(EditText) findViewById(R.id.passwordRegister);
-        age=(EditText) findViewById(R.id.ageRegister);
-        sex=(RadioGroup) findViewById(R.id.sexRegister);
-        register=(Button) findViewById(R.id.Register);
-    }
+        register.setOnClickListener(new View.OnClickListener() { //등록 버튼 누르면 회원가입 완료 -> 로그인 페이지 이동
+            public void onClick(View v) {
+                if(edtId.length() !=0 && edtName.length() !=0 && edtPw.length() !=0 && edtEmail.length() !=0 && edtAge.length() !=0)
+                {
+                    Toast.makeText(MainRegister.this, "회원가입 성공", Toast.LENGTH_LONG).show();
 
+                    Intent intent = new Intent(MainRegister.this,MainLogin.class);
+                    startActivity(intent);
+                }
+                /*if(edtName.length()==0){
+                    Toast.makeText(MainRegister.this, "이름을 입력해주세요.", Toast.LENGTH_LONG).show();
+                    if(edtId.length()==0){
+                        Toast.makeText(MainRegister.this, "아이디를 입력해주세요.", Toast.LENGTH_LONG).show();
+                    }
+                    if(edtPw.length()==0){
+                        Toast.makeText(MainRegister.this, "비밀번호를 입력해주세요.", Toast.LENGTH_LONG).show();
+                    }
+                    if(edtEmail.length()==0){
+                        Toast.makeText(MainRegister.this, "이메일을 입력해주세요.", Toast.LENGTH_LONG).show();
+                    }
+                    if(edtAge.length()==0){
+                        Toast.makeText(MainRegister.this, "나이를 입력해주세요.", Toast.LENGTH_LONG).show();
+                    }
+                }*/
+                /*else{
+                    Toast.makeText(MainRegister.this,"빈 값이 있습니다.",Toast.LENGTH_SHORT).show();
+                }*/
+            }
+        });
+    }
 }

@@ -16,12 +16,11 @@ public class PayCompleteActivity extends Activity {
         reserveSeat = (TextView)findViewById(R.id.reserveSeat);
         reserveTime = (TextView)findViewById(R.id.reserveTime);
 
-
         Button BtnCheck = (Button)findViewById(R.id.BtnCheck);
         BtnCheck.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), MainMypage.class);
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
             }
         });

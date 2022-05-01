@@ -1,7 +1,7 @@
 package com.example.mcs1;
 import java.io.Serializable;
 
-public class User implements Serializable{
+/*public class User implements Serializable{
     private int id;
     private String username;
     private String password;
@@ -9,7 +9,6 @@ public class User implements Serializable{
     private String sex;
     public User() {
         super();
-// TODO Auto-generated constructor stub
     }
 
     public User(String username, String password, int age, String sex) {
@@ -55,4 +54,4 @@ public class User implements Serializable{
         return "User [id=" + id + ", username=" + username + ", password=" + password + ", age=" + age + ", sex=" + sex + "]";
     }
 
-}
+}*/

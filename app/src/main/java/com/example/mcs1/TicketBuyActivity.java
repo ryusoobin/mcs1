@@ -37,10 +37,10 @@ public class TicketBuyActivity extends Activity {
                 if(selected[0]){
                     BtnTimeTicket1.setSelected(false);
                     selected[0] = false;
-                    BtnTimeTicket3.setSelected(true);
-                    BtnTimeTicket6.setSelected(true);
-                    BtnTimeTicket9.setSelected(true);
-                    BtnTimeTicket12.setSelected(true);
+                    BtnTimeTicket3.setSelected(false);
+                    BtnTimeTicket6.setSelected(false);
+                    BtnTimeTicket9.setSelected(false);
+                    BtnTimeTicket12.setSelected(false);
                 }
                 else{
                     BtnTimeTicket1.setSelected(true);
@@ -60,10 +60,10 @@ public class TicketBuyActivity extends Activity {
                 if(selected[0]){
                     BtnTimeTicket3.setSelected(false);
                     selected[0] = false;
-                    BtnTimeTicket1.setSelected(true);
-                    BtnTimeTicket6.setSelected(true);
-                    BtnTimeTicket9.setSelected(true);
-                    BtnTimeTicket12.setSelected(true);
+                    BtnTimeTicket1.setSelected(false);
+                    BtnTimeTicket6.setSelected(false);
+                    BtnTimeTicket9.setSelected(false);
+                    BtnTimeTicket12.setSelected(false);
                 }
                 else{
                     BtnTimeTicket3.setSelected(true);
@@ -83,10 +83,10 @@ public class TicketBuyActivity extends Activity {
                 if(selected[0]){
                     BtnTimeTicket6.setSelected(false);
                     selected[0] = false;
-                    BtnTimeTicket3.setSelected(true);
-                    BtnTimeTicket1.setSelected(true);
-                    BtnTimeTicket9.setSelected(true);
-                    BtnTimeTicket12.setSelected(true);
+                    BtnTimeTicket3.setSelected(false);
+                    BtnTimeTicket1.setSelected(false);
+                    BtnTimeTicket9.setSelected(false);
+                    BtnTimeTicket12.setSelected(false);
                 }
                 else{
                     BtnTimeTicket6.setSelected(true);
@@ -106,10 +106,10 @@ public class TicketBuyActivity extends Activity {
                 if(selected[0]){
                     BtnTimeTicket9.setSelected(false);
                     selected[0] = false;
-                    BtnTimeTicket3.setSelected(true);
-                    BtnTimeTicket6.setSelected(true);
-                    BtnTimeTicket1.setSelected(true);
-                    BtnTimeTicket12.setSelected(true);
+                    BtnTimeTicket3.setSelected(false);
+                    BtnTimeTicket6.setSelected(false);
+                    BtnTimeTicket1.setSelected(false);
+                    BtnTimeTicket12.setSelected(false);
                 }
                 else{
                     BtnTimeTicket9.setSelected(true);
@@ -129,10 +129,10 @@ public class TicketBuyActivity extends Activity {
                 if(selected[0]){
                     BtnTimeTicket12.setSelected(false);
                     selected[0] = false;
-                    BtnTimeTicket3.setSelected(true);
-                    BtnTimeTicket6.setSelected(true);
-                    BtnTimeTicket9.setSelected(true);
-                    BtnTimeTicket1.setSelected(true);
+                    BtnTimeTicket3.setSelected(false);
+                    BtnTimeTicket6.setSelected(false);
+                    BtnTimeTicket9.setSelected(false);
+                    BtnTimeTicket1.setSelected(false);
                 }
                 else{
                     BtnTimeTicket12.setSelected(true);
@@ -148,7 +148,7 @@ public class TicketBuyActivity extends Activity {
             @Override
             public void onClick(View v) {
                 if(selected[0]) {
-                    Intent intent = new Intent(getApplicationContext(), TicketBuyActivity.class);
+                    Intent intent = new Intent(getApplicationContext(), PayCompleteActivity.class);
                     startActivity(intent);
                 }
                 else{

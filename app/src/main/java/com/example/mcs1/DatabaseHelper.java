@@ -4,7 +4,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteDatabase.CursorFactory;
 import android.database.sqlite.SQLiteOpenHelper;
 
-public class DatabaseHelper extends SQLiteOpenHelper {
+/*public class DatabaseHelper extends SQLiteOpenHelper {
     static String name="user.db";
     static int dbVersion=1;
     public DatabaseHelper(Context context) {
@@ -19,4 +19,4 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     }
 
-}
+}*/

@@ -3,7 +3,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
-public class UserService {
+/*public class UserService {
     private DatabaseHelper dbHelper;
     public UserService(Context context){
         dbHelper=new DatabaseHelper(context);
@@ -26,4 +26,4 @@ public class UserService {
         sdb.execSQL(sql, obj);
         return true;
     }
-}
+}*/
