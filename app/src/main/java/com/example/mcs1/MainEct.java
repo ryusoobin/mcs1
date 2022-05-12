@@ -24,7 +24,6 @@ public class MainEct extends Activity {
         Datas.add("1:1 이용문의");
         Datas.add("이용약관");
         Datas.add("개인정보 처리 방침");
-        Datas.add("위치 정보 활용");
         Datas.add("버전 정보");
 
         ArrayAdapter adapter = new ArrayAdapter(this,android.R.layout.simple_list_item_1,Datas);
@@ -65,10 +64,10 @@ public class MainEct extends Activity {
             }
         });
 
-        ImageButton BtnMap = (ImageButton) findViewById(R.id.BtnMap);
-        BtnMap.setOnClickListener(new View.OnClickListener() {
+        ImageButton BtnPay = (ImageButton) findViewById(R.id.BtnPay);
+        BtnPay.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), MainMap.class);
+                Intent intent = new Intent(getApplicationContext(), MainPay.class);
                 startActivity(intent);
             }
         });

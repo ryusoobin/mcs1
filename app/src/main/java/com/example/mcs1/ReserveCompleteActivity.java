@@ -7,26 +7,25 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class PayCompleteActivity extends Activity {
+public class ReserveCompleteActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.pay_complete);
+        setContentView(R.layout.reserve_complete);
 
-        TextView reserveTime;
-        reserveTime = (TextView)findViewById(R.id.reserveTime);
+        TextView reserveSeat;
+        reserveSeat = (TextView)findViewById(R.id.reserveSeat);
 
+        String seat;
         Intent intent = getIntent();
-        Bundle bundle = intent.getExtras();
+        seat = intent.getStringExtra("reserveseat");
 
-        String time = bundle.getString("reservetime");
-        reserveTime.setText(time);
+        reserveSeat.setText(seat);
 
-        Button BtnCheck = (Button)findViewById(R.id.BtnCheck);
-        BtnCheck.setOnClickListener(new View.OnClickListener() {
+        Button BtnCheck1 = (Button)findViewById(R.id.BtnCheck1);
+        BtnCheck1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), MainMypage.class);
-                intent.putExtra("selecttime",time);
                 startActivity(intent);
             }
         });

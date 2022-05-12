@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
@@ -35,94 +36,88 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="560dp"
-        android:orientation="vertical">
+        android:paddingTop="100dp"
+        android:layout_marginBottom="170dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_marginBottom="40dp"
             android:gravity="center"
             android:text="로그인"
-            android:layout_marginBottom="30dp"
             android:textSize="30dp"
             android:textStyle="bold" />
 
-        <TableLayout
-            android:layout_width="match_parent"
+        <EditText
+            android:id="@+id/ID"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
             android:layout_height="wrap_content"
-            android:stretchColumns="1" >
+            android:layout_marginBottom="10dp"
+            android:background="#B0AEE6FF"
+            android:hint="ID를 입력하세요."
+            android:textSize="15dp"
+            android:padding="10dp"
+            android:gravity="center"/>
 
-            <TableRow>
+        <EditText
+            android:id="@+id/PW"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#B0AEE6FF"
+            android:hint="패스워드를 입력하세요."
+            android:textSize="15dp"
+            android:padding="10dp"
+            android:gravity="center"/>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
-                    android:text=" 아이디" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
 
-                <EditText
-                    android:id="@+id/usernameLogin"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:hint=" 사용자 아이디를 입력하십시오" />
-            </TableRow>
+            <Button
+                android:id="@+id/sign_in"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="로그인"
+                android:layout_marginRight="10dp"
+                android:background="#D7C0FF"
+                android:layout_marginTop="20dp"/>
 
-            <TableRow>
+            <Button
+                android:id="@+id/sign_up"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="회원가입"
+                android:layout_marginLeft="10dp"
+                android:background="#D7C0FF"
+                android:layout_marginTop="20dp"/>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text=" 비밀번호" />
-
-                <EditText
-                    android:id="@+id/passwordLogin"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:hint=" 사용자 비밀번호를 입력하십시오" />
-            </TableRow>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="100dp">
-
-                <Button
-                    android:id="@+id/BtnLogin"
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp"
-                    android:text=" 로그인" />
-
-                <Button
-                    android:id="@+id/BtnRegister"
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:text="회원가입" />
-                </LinearLayout>
-        </TableLayout>
-
+        </LinearLayout>
         <Button
+            android:id="@+id/find"
             android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/BtnFind"
+            android:layout_height="50dp"
             android:text="아이디/비밀번호 찾기"
-            android:textColor="#000000"
-            android:background="#FFFFFF"
-            android:layout_marginLeft="220dp"
-            android:layout_marginTop="15dp"
-            android:textSize="10dp" />
+            android:layout_marginLeft="100dp"
+            android:background="#D7C0FF"
+            android:layout_marginTop="20dp"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"
-        android:orientation="horizontal"
-        >
+        android:orientation="horizontal">
 
         <ImageButton
             android:id="@+id/BtnUser"
@@ -157,7 +152,7 @@
             android:scaleType="fitCenter"/>
 
         <ImageButton
-            android:id="@+id/BtnMap"
+            android:id="@+id/BtnPay"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_gravity="center"

@@ -85,7 +85,7 @@
             android:scaleType="fitCenter"/>
 
         <ImageButton
-            android:id="@+id/BtnMap"
+            android:id="@+id/BtnPay"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_gravity="center"

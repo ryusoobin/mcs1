@@ -15,7 +15,7 @@ public class MainActivity extends Activity {
 
         ImageButton BtnUser = (ImageButton)findViewById(R.id.BtnUser);
         ImageButton BtnReservation = (ImageButton) findViewById(R.id.BtnReservation);
-        ImageButton BtnMap = (ImageButton)findViewById(R.id.BtnMap);
+        ImageButton BtnPay = (ImageButton)findViewById(R.id.BtnPay);
         ImageButton BtnEct = (ImageButton)findViewById(R.id.BtnEct);
 
         BtnUser.setOnClickListener(new View.OnClickListener() {
@@ -32,9 +32,9 @@ public class MainActivity extends Activity {
             }
         });
 
-        BtnMap.setOnClickListener(new View.OnClickListener() {
+        BtnPay.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), MainMap.class);
+                Intent intent = new Intent(getApplicationContext(), MainPay.class);
                 startActivity(intent);
             }
         });

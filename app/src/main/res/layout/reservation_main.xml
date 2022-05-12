@@ -242,18 +242,13 @@
         android:orientation="horizontal"
         android:layout_gravity="center">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="165dp"
-        android:layout_gravity="center"
-        android:text="선택된 좌석: " />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/selectnum"
-        android:layout_gravity="center"
-        android:text=""/>
+        <TextView
+            android:id="@+id/selectnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="" />
+
     </LinearLayout>
 
     <Button
@@ -305,7 +300,7 @@
             android:src="@drawable/home" />
 
         <ImageButton
-            android:id="@+id/BtnMap"
+            android:id="@+id/BtnPay"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_gravity="center"

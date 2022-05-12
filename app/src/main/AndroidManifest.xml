@@ -21,13 +21,14 @@
         </activity>
         <activity android:name=".MainLogin" />
         <activity android:name=".MainRegister" />
-        <activity android:name=".MainMap" />
+        <activity android:name=".MainPay" />
         <activity android:name=".MainEct" />
         <activity android:name=".MainReservation" />
         <activity android:name=".MainMypage" />
-        <activity android:name=".TicketBuyActivity" />
         <activity android:name=".InformationFindActivity" />
         <activity android:name=".PayCompleteActivity" />
+        <activity android:name=".ReserveCompleteActivity" />
+        <activity android:name=".UsageHistoryActivity" />
     </application>
 
 </manifest>
